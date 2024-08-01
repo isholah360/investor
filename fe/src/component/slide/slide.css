@@ -1,6 +1,7 @@
 ul{
     list-style: none;
     margin-left: -2.5rem;
+    margin-top: 3rem;
 }
 /* Container for the entire slider component */
 .slider-container {
@@ -83,7 +84,11 @@ ul{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1em;
+    gap: 1em;position: relative;
+  }
+  .loading{
+    position: absolute;
+    margin: -2.5rem 0;
   }
   .calibrate{
     height: 5rem;

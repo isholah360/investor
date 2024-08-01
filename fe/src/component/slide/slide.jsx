@@ -56,7 +56,7 @@ const Slider = () => {
       </div>
 
       <div>
-        {loading && <p>Loading...</p>}
+        {loading && <p className="loading">Loading...</p>}
         {error && <p>Error: {error}</p>}
         {data && (
           <div>
