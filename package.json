@@ -1,0 +1,26 @@
+{
+  "name": "risk",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node --watch server/server.js",
+    "start": "node server/server.js",
+    "client": "cd fe && npm run dev",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "build":"npm install && npm install --prefix fe && npm run build --prefix fe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2"
+  }
+}
