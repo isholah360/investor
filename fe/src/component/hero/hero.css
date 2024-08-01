@@ -1,6 +1,6 @@
 .hero-complete{
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: 3fr 2.5fr;
     height: 100lvh;
     gap: .5rem;
     justify-items: center;
@@ -12,11 +12,11 @@
 }
 .hero-img{
     background-color: rgb(220, 238, 252);
-    padding: 15%;
+    padding: 14%;
     border-radius: 20px;
 }
 .hero-img img{
-    width: 30rem;
+    width: clamp(35vw, 40vw + 1rem, 35rem)
 }
 .hero-content .hero-title{
    font-size: clamp(100%, 3vw + .5rem, 3rem);
@@ -30,14 +30,81 @@
     font-weight: 400;
     line-height: 1.5rem;
     color: black;
-    margin: 1rem 0;
+    margin: 1.2rem 0;
  }
  .hero-content button{
    padding: .75rem 1rem;
    max-width: 8rem;
   }
  .hero-content{
-   padding: 0 12% 0 0;
+   padding: 0 13% 0 0;
    display: grid;
    align-content: center;
+   width: 75%;
  }
+ .the-subscribers{
+    color: black;
+    margin: 2rem auto 1rem auto;
+    background-color: rgb(250, 239, 226);
+    text-align: center;
+    display: flex;
+    border-radius: 20px;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    flex-wrap: wrap;
+ }
+ .main-inner .subs{
+    font-size: clamp(100%, 1.2vw + .5rem, 1.8rem);
+    font-family: sans-serif;
+    font-weight: 800;
+   
+ }
+ .subs{
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+    
+ }
+ .sub-img{
+    width: 1rem;
+ }
+ .sub-img img{
+    width: 100%;
+ }
+ .subs-cont{
+    font-size: .9rem;
+ }
+ @media screen and (max-width: 760px) {
+    .hero-complete{
+       grid-template-columns: 1fr;
+       height: clamp(100vh, 90vh + 10rem, 100rem);
+    }
+    .hero-content{
+        text-align: center;
+        justify-items: center;
+       
+      }
+      .hero-img {
+      display: none;
+    }
+      .hero-img img{
+        width: clamp(85vw, 40vw + 1rem, 35rem)
+    }
+    .hero-content .hero-title{
+        font-size: clamp(100%, 5vw + .5rem, 5rem);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 900;
+        line-height: 3rem;
+        color: black;
+     }
+     .subs-cont{
+        font-size: .75rem;
+        width: 100%;
+     }
+     .the-subscribers{
+       gap: .75rem;
+     }
+     .hero-sub{ 
+        padding: 1.5rem 0;
+     }
+  }

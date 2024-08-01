@@ -22,23 +22,31 @@ function Hero() {
 
             <div className="the-subscribers">
               <div className="main-inner">
-                {" "}
                 <div className="subs">800K+</div>
+                <div className="subs-cont">Trusted Clients</div>
               </div>
               <div className="main-inner">
-                <div className="assets-ss"></div>
+                <div className="subs">$60B+</div>
+                <div className="subs-cont">In total assets</div>
               </div>
               <div className="main-inner">
-                {" "}
-                <div className="apple"></div>
+                <div className="subs">
+                  <div className="main-sub">4.8</div>
+                  <div className="sub-img"><img src="assets/star.png" alt="" /></div>
+                </div>
+                <div className="subs-cont">Apple App Store</div>
+              </div>
+              <div className="main-inner">
+                <div className="subs">
+                  <div className="main-sub">4.9</div>
+                  <div className="sub-img"><img src="assets/star.png" alt="" /></div>
+                </div>
+                <div className="subs-cont">Google Play Store</div>
               </div>
             </div>
           </div>
           <div className="hero-img">
-            <img
-              src="https://www.betterment.com/hs-fs/hubfs/BettermentAppPhone-1.png?width=1235&name=BettermentAppPhone-1.png"
-              alt=""
-            />
+            <img src="assets/hero.png" alt="" />
           </div>
         </div>
       </div>
