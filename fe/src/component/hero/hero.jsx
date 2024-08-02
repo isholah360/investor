@@ -1,11 +1,15 @@
 import React from "react";
 import "./hero.css";
+import Navigations from "../naviagtions/navigations";
 
 function Hero() {
   return (
     <>
       <div>
         <div className="hero-complete">
+          <div className="navys">
+            <Navigations/>
+          </div>
           <div className="hero-content">
             <div className="hero-title">
               Join a new generation of smart saver, investor and learner
