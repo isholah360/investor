@@ -55,13 +55,13 @@ const Slider = () => {
         </div>
       </div>
 
-      <div>
+      <div className="">
         {loading && <p className="loading">Loading...</p>}
         {error && <p>Error: {error}</p>}
         {data && (
-          <div>
+          <div >
             
-            <ul>
+            <ul className="slidez-list">
               {data.map((item, index) => (
                 <li key={index}>
                   <div className="out-content">

@@ -1,4 +1,4 @@
-ul{
+.slidez-list{
     list-style: none;
     margin-left: -2.5rem;
     margin-top: 3rem;
@@ -81,8 +81,8 @@ ul{
   .main-slide{
     padding: 1rem 5%;
     font-size: clamp(.85vw, 1.2vw + .5rem, 1rem);
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     gap: 1em;position: relative;
   }
@@ -196,4 +196,5 @@ ul{
     .slider {
       width: clamp(20vw, 85vw + 1rem, 40rem);
     }
+    .main-slide-two{}
   }
