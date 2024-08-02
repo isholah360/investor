@@ -1,7 +1,6 @@
 .hero-complete{
     display: grid;
     grid-template-columns: 3fr 2.5fr;
-    height: 100lvh;
     gap: .5rem;
     justify-items: center;
     align-content: center;
@@ -44,14 +43,16 @@
  }
  .the-subscribers{
     color: black;
+    width: 95%;
     margin: 2rem auto 1rem auto;
     background-color: rgb(250, 239, 226);
     text-align: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
     border-radius: 20px;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1.5rem 1rem;
-    flex-wrap: wrap;
+  
  }
  .main-inner .subs{
     font-size: clamp(100%, 1.2vw + .5rem, 1.8rem);
@@ -77,7 +78,7 @@
  @media screen and (max-width: 760px) {
     .hero-complete{
        grid-template-columns: 1fr;
-       height: clamp(100vh, 90vh + 10rem, 100rem);
+       
     }
     .hero-content{
         text-align: center;
