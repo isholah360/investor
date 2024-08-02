@@ -13,14 +13,14 @@ const Slider = () => {
       setError(null);
       try {
         const response = await fetch(
-          `http://localhost:8000/api/add/${riskTolerance}`
+          `https://investors-qg00.onrender.com/api/add/${riskTolerance}`
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
         const result = await response.json();
         setData(result);
-        console.log(result)
+      
       } catch (error) {
         setError(error.message);
       } finally {
