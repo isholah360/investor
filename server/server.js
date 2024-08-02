@@ -10,7 +10,7 @@ const port = process.env.Port || 8000
 
 
 const __dirname = path.resolve()
-console.log(__dirname)
+
 const app = express()
 
 app.use(cors({
