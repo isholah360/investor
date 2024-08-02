@@ -8,13 +8,14 @@ import path from 'path'
 configDotenv()
 const port = process.env.Port || 8000
 
-// const __filename = fileURLToPath(import.meta.url)
-// const __dirname = path.dirname(__filename)
+
 const __dirname = path.resolve()
 console.log(__dirname)
 const app = express()
 
-app.use(cors())
+app.use(cors({
+  origin: '*', 
+}));
 app.use(express.urlencoded({extended: true}))
 
 app.use('/api', router)
