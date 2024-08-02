@@ -177,7 +177,7 @@
     width: 8rem;
   }
   .main-slide-two{
-   width: 32rem;
+   max-width: clamp(60vw, 75vw + 1rem, 32rem);
   }
   .main-slide-two img{
    width: 100%;
@@ -191,10 +191,13 @@
     }
     .main-slide{
       padding: 1rem 5%;
+      overflow-x: hidden;
     
     }
     .slider {
       width: clamp(20vw, 85vw + 1rem, 40rem);
     }
-    .main-slide-two{}
+    .main-slide-two{
+
+    }
   }
